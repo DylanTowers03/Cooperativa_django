@@ -1,3 +1,8 @@
 from django.contrib import admin
+from .models import Modalidad, Prestamos
 
-# Register your models here.
+class PrestamosAdmin(admin.ModelAdmin):
+    pass
+
+admin.site.register(Prestamos, PrestamosAdmin)
+admin.site.register(Modalidad)
