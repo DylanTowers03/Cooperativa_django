@@ -19,12 +19,3 @@ class CodeudorList(viewsets.ModelViewSet):
 
     serializer_class = CodeudorSerializer
     queryset = Codeudor.objects.all()
-
-
-
-class CodeudorDetail(generics.RetrieveUpdateDestroyAPIView):
-    """
-    Retrieve, update or delete de los clientes por pk
-    """
-    queryset = Codeudor.objects.all()
-    serializer_class = CodeudorSerializer
